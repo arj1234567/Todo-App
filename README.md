@@ -4,7 +4,7 @@
 This is a simple Todo application built using Django framework. It allows users to register, log in, add projects, add tasks to projects, mark tasks as completed, and view project details.
 
 
-##Features
+## Features
 
 
    User authentication: Users can register an account and log in securely.
@@ -15,7 +15,7 @@ This is a simple Todo application built using Django framework. It allows users 
    
    Session management: User sessions are maintained securely throughout the application.
   
-##Installation
+## Installation
 
 
   Navigate into the project directory:
@@ -29,7 +29,7 @@ This is a simple Todo application built using Django framework. It allows users 
   Access the application at http://localhost:8000/ in your web browser.
 
   
-Usage
+## Usage
 
   Register an account or log in if you already have one.
   
