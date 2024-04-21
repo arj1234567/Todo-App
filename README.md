@@ -8,8 +8,11 @@ This is a simple Todo application built using Django framework. It allows users 
 
 
    User authentication: Users can register an account and log in securely.
+   
    Project management: Users can add projects with titles and descriptions.
+   
    Task management: Users can add tasks to projects, mark tasks as completed, and view project details.
+   
    Session management: User sessions are maintained securely throughout the application.
   
 ##Installation
