@@ -1,4 +1,4 @@
-Todo App
+
 This is a simple Todo application built using Django framework. It allows users to register, log in, add projects, add tasks to projects, mark tasks as completed, and view project details.
 Features
    User authentication: Users can register an account and log in securely.
