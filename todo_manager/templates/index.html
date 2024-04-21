@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            position: relative;
+        }
+        .navbar {
+            background-color: #1437e5 !important;
+        }
+        .navbar-brand {
+            color: #ffffff;
+        }
+        h2{
+            padding-bottom: 40px;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgb(248, 246, 246);
+            padding: 100px;
+            margin-top: 30px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: #1437e5;
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Todo App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register'%}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login'%}">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 form-container">
+                <h2 style="text-align: center;">Welcome to the Todo App!</h2>
+                <p>Organize your projects effortlessly with our intuitive todo application. Plan, manage, and accomplish your tasks seamlessly.</p>
+                <p>Sign up now to experience streamlined project management. Start creating your projects, setting deadlines, and tracking progress today!</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span style="color: white;">© 2024 Todo App. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% if messages %}
+{% for msg in messages %}
+    <script>
+        alert('{{msg}}');
+    </script>
+{% endfor %}
+{% endif %}
+</html>
+
+
+
+
+
